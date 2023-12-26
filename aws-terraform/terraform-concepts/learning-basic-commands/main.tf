@@ -15,9 +15,9 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami                    = "ami-0fc5d935ebf8bc3bc"
   instance_type          = "t2.micro"
-  key_name               = "terraform-aws"
-  vpc_security_group_ids = ["sg-0c51540c60857b7ed"]
-  subnet_id              = "subnet-096d45c28d9fb4c14"
+  key_name               = "key-pair-cas"
+  vpc_security_group_ids = ["sg-03929657fe7384ee1"]
+  subnet_id              = "subnet-0004e2bc6eb9b6f4b"
   root_block_device {
     volume_size = "10"
   }
